@@ -1,18 +1,7 @@
-Dirty Fragmentation (Dirty Frag) Privilege Escalation
+Dirty Fragmentation (Dirty Frag)
 
-Dirty Fragmentation atau sering disebut Dirty Frag merupakan kerentanan pada kernel Linux yang dapat dimanfaatkan oleh penyerang untuk melakukan privilege escalation dari user biasa menjadi akses root. Kerentanan ini memanfaatkan kelemahan dalam pengelolaan fragmentasi memori/kernel sehingga memungkinkan proses tertentu memperoleh hak akses lebih tinggi secara tidak sah.
+Dirty Fragmentation atau Dirty Frag merupakan istilah yang digunakan untuk menggambarkan teknik eksploitasi pada sistem Linux yang memanfaatkan kelemahan pengelolaan memori atau fragmentasi kernel untuk memperoleh hak akses lebih tinggi. Kerentanan ini biasanya digunakan dalam tahap privilege escalation setelah penyerang berhasil mendapatkan akses awal ke sistem.
 
-Dalam skenario latihan keamanan siber ini, kerentanan Dirty Frag digunakan sebagai simulasi tahapan post-exploitation, di mana attacker yang telah berhasil memperoleh akses awal ke server mencoba meningkatkan privilege untuk:
+Eksploitasi jenis ini dapat memungkinkan attacker meningkatkan hak akses dari user biasa menjadi root, sehingga attacker dapat melakukan berbagai aktivitas lanjutan seperti mengubah konfigurasi sistem, membuat persistence, menjalankan malware, maupun mengakses data sensitif.
 
-mendapatkan akses root,
-membuat persistence,
-menambahkan user baru,
-menjalankan malicious process,
-serta mempertahankan akses pada sistem.
-
-Tujuan simulasi ini adalah membantu peserta memahami:
-
-indikator privilege escalation,
-analisis log serangan,
-deteksi aktivitas abnormal,
-serta proses investigasi insiden pada lingkungan Linux server.
+Kerentanan privilege escalation pada Linux seperti Dirty Frag menjadi perhatian penting karena sering dimanfaatkan dalam rantai serangan pasca-kompromi (post-exploitation) pada server maupun infrastruktur berbasis Linux.
